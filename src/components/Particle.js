@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
+import image from "../Assets/binary-code.png";
 
 function Particle() {
   return (
@@ -8,10 +9,10 @@ function Particle() {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 100,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 3000,
             },
           },
           line_linked: {
@@ -19,17 +20,28 @@ function Particle() {
             opacity: 0.03,
           },
           move: {
-            direction: "right",
-            speed: 0.05,
+            enable: true,
+            straight: true,
+            direction: "bottom",
+            speed: 2,
           },
           size: {
-            value: 1,
+            value: 15,
           },
           opacity: {
+            value: 0.45,
             anim: {
               enable: true,
               speed: 1,
-              opacity_min: 0.05,
+              opacity_min: 0.01,
+            },
+          },
+          shape: {
+            type: "image",
+            image: {
+              src: image,
+              width: 500,
+              height: 500,
             },
           },
         },

@@ -155,8 +155,21 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 8em !important;
+  width: 8em !important;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbar .container .navbar-brand {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    height: 6em !important;
+    width: 6em !important;
+  }
 }
 
 .navbar-nav .nav-link {
